@@ -1,0 +1,12 @@
+{
+  "car": 0,
+  "bus": 1,
+  "autorickshaw": 2,
+  "truck": 3,
+  "motorcycle": 4,
+  "rider": 5,
+  "person": 6,
+  "bicycle": 7,
+  "traffic sign": 8,
+  "traffic light": 9
+}
