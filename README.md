@@ -1,15 +1,13 @@
-# AACV Project -- Exploring the Dataset
+# Class Distribution / Dataset Exploration
 
-## To use these scripts
+## IDD10_converted (as created by Kai on Kaggle)
+
+### To use these scripts for dataset exploration
 
 1. Change the paths to point to your dataset. This change needs to be made in explore_data.py
 2. Run explore_data.py
 
-# Progress so far
-
-## IDD10_converted (as created by Kai on Kaggle)
-
-### Training Set
+### Class distribution on the Training Set
 Total number of images: 31569
 
 Class-wise distribution:
@@ -24,7 +22,7 @@ Class-wise distribution:
 * Traffic sign: 9,916 (2.74%)
 * Traffic light: 2,780 (0.77%)
 
-### Validation Set
+### Class distribution on the Validation Set
 Total number of images: 10225
 
 Class-wise distribution:
@@ -43,3 +41,16 @@ Class-wise distribution:
 * Major Classes: Motorcycle, Person, Rider, and Car remain the major classes, each comprising between 18% to 22% of the dataset.
 * Minor Classes: Bicycle (0.71%) and Traffic light (0.77%) are still underrepresented compared to other classes.
 * Intermediate Classes: Truck (5.74%), Autorickshaw (6.78%), Traffic sign (2.74%), and Bus (3.82%) have moderate representation.
+
+
+# Training on IDD10_converted
+
+## Plain YOLO (Pre-trained YOLOv8 nano)
+
+### Configuration
+* Epochs = 10
+* Batch size = 16
+* YOLO image size = 640 (resizing done automatically by YOLOv8)
+
+### Metrics on the Validation Set
+
